@@ -5,14 +5,22 @@
   "keywords": [
     "tsconfig"
   ],
-  "repository": "https://github.com/robinloeffel/robins-tsconfig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinloeffel/robins-tsconfig.git"
+  },
   "license": "MIT",
   "author": "Robin Löffel",
+  "type": "module",
   "files": [
     "tsconfig.json"
   ],
+  "scripts": {
+    "lint": "publint"
+  },
   "devDependencies": {
-    "typescript": "6.0.2"
+    "publint": "0.3.25",
+    "typescript": "7.0.2"
   },
   "peerDependencies": {
     "typescript": ">=6"
